@@ -20,5 +20,9 @@ public class TldExtractTest {
         Assert.assertEquals("192.168.100.1", domainName.getDomain());
         Assert.assertEquals("192.168.100.1", domainName.getSecondaryDomainName());
         Assert.assertEquals("", domainName.getSuffix());
+
+        url = "http://hd.beijing.gov.cn/12312/123?name=123#fs";
+        domainName = tldExtract.extractFromUrl(url);
+        System.out.println(domainName);
     }
 }
