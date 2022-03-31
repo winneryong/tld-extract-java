@@ -33,8 +33,8 @@ public class DomainName {
         return StrUtil.isNotBlank(getSuffix()) ? (getDomain() + "." + getSuffix()) : getDomain();
     }
 
-    public String getFullDomainName(){
-        return StrUtil.isNotBlank(getSuffix()) ? (getSubDomain() + "." +getDomain() + "." + getSuffix()) : getDomain();
+    public String getFullDomainName() {
+        return StrUtil.isNotBlank(getSuffix()) ? (getSubDomain() + "." + getDomain() + "." + getSuffix()) : getDomain();
     }
 
     @Override

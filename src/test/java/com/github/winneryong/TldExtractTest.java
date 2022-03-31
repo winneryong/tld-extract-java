@@ -24,5 +24,13 @@ public class TldExtractTest {
         url = "http://hd.beijing.gov.cn/12312/123?name=123#fs";
         domainName = tldExtract.extractFromUrl(url);
         System.out.println(domainName);
+
+        url = "http://oa.jlca.gov.cn/12312/123?name=123#fs";
+        domainName = tldExtract.extractFromUrl(url);
+        System.out.println(domainName);
+
+        url = "http://www.ad.oa.jlca.gov.cn/12312/123?name=123#fs";
+        domainName = tldExtract.extractFromUrl(url);
+        System.out.println(domainName);
     }
 }
